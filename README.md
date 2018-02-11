@@ -18,7 +18,22 @@ TODO: Compare Unity loading time of prefab in:
 1. There are a variety of techniques that have tradeoffs for how easy the assets are to edit.
     1. For example, Unity does not support nested prefabs, so editing a prefab in a additive scene imitates one layer of a nested prefab.
     1. However loading a scene invokes more operations than loading a prefab, so an additive scene is going to be slower.
+        1. "To load an additive scene with a single cube on top of an empty scene took approx 50 ms, while loading an asset bundle with a cube into the same scene took approx 14 ms." The memory optimization struggle in Unity3d by Emiliano Pastorelli on 06/27/17 <https://www.gamasutra.com/blogs/EmilianoPastorelli/20170627/300585/The_memory_optimization_struggle_in_Unity3d.php>
 1. To make a balanced decision, how fast is each technique on a complex prefab?
+    1. While a complex prefab would be loaded asynchronously, a first pass estimate is made with synchronous, since synchronous calls are simpler to profile.
+
+## Instructions
+
+1. Load scene `TestLoadPrefab.unity`
+1. Open profiler.
+1. Observe CPU and memory rows.
+1. For accurate profiling, build to device with profiling enabled.
+1. Play.
+1. Record profiler.  Observe frames being measured as baseline.
+1. Click button "Additive Scene".
+1. Stop recording.  Select frame of spike.
+1. Inspect time spent loading.
+1. Inspect garbage allocated.
 
 ## Features
 
@@ -30,3 +45,4 @@ TODO: Compare Unity loading time of prefab in:
 - [ ] Loading time of prefab in resources.
 - [ ] Loading time of prefab in asset bundle.
 - [ ] Loading time of prefab in scriptable object.
+- [ ] To be more accurate, custom sampler for each.
