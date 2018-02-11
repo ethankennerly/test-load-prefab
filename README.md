@@ -5,6 +5,7 @@ In Unity, compares time to load a prefab. In order of fastest to slowest on Wind
 1. Resources
 2. Asset bundle
 3. Additive scene
+4. Additive scene with duplicates of a prefab
 
 ## Use case
 
@@ -50,23 +51,23 @@ System specs:
 
 1. Windows at 800x600 resolution
 
-        Technique       KB Allocated   Milliseconds
-        Resource         29             2
-        Asset Bundle     30             8
-        Additive scene   14            19
-        Single scene     70            37
+        Technique               KB Allocated   Milliseconds
+        Resource                 29             2
+        Asset Bundle             30             8
+        Additive scene           14            19
+        Additive 10 prefabs     142            22
+        Single scene             70            37
 
 1. Within editor, is not represented of device.
 
-        Technique       KB Allocated   Milliseconds
-        Resource         43             7
-        Asset Bundle     70             7
-        Additive scene  220            38
-        Single scene    180            57
+        Technique               KB Allocated   Milliseconds
+        Resource                 43             7
+        Asset Bundle             70             7
+        Additive scene          220            38
+        Additive 10 prefabs     487            40
+        Single scene            180            57
 
-## Features
+Ten duplicates of a prefab doesn't take much longer to load than one prefab, though it does take more memory.  Unity is serializing each prefab:
 
-- [x] Empty Unity project in Unity 2017.2.
-- [x] Loading time of prefab in additive scene.
-- [x] Loading time of prefab in resources.
-- [x] Loading time of prefab in asset bundle.
+> As mentioned before, when serializing a monolithic prefab, every GameObject and component's data is serialized separately, which may duplicate data. For example, a UI screen with 30 identical elements will have the identical element serialized 30 times, producing a large blob of binary data. At load time, the data for all of the GameObjects and Components on each one of those 30 duplicate elements must be read from disk before being transferred to the newly-instantiated Object.
+<https://unity3d.com/learn/tutorials/topics/best-practices/assets-objects-and-serialization>
