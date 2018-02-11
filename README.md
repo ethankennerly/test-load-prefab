@@ -30,26 +30,30 @@ TODO: Compare Unity loading time of prefab in:
 1. For accurate profiling, build to device with profiling enabled.
 1. Play.
 1. Record profiler.  Observe frames being measured as baseline.
-1. Click button "Additive Scene".
-1. Stop recording.  Select frame of spike.
-1. Inspect time spent loading.
-1. Inspect garbage allocated.
-1. Save profile if you want to refer to it later.
+1. Profile loading.
+    1. Click button "Clear cache".
+    1. Click button "Additive Scene" or another loading technique.
+    1. Stop recording.  Select frame of spike.
+    1. Inspect time spent loading.
+    1. Inspect garbage allocated.
+    1. Record system and results.
+    1. Save profile if you want to refer to it later.
+    1. Click button "Reload scene" and repeat these sub-steps on the other techniques.
 
 ## Results
 
+System specs:
 - Intel Core i7-6500U CPU @ 2.5GHz
 - RAM 8GB
 - Windows 10 Home
 - Unity Editor 2017.2
 
 1. Within editor
-    - Additive scene
-        - Garbage allocated 192 KB
-        - Time 29 ms
-    - Single scene
-        - Garbage allocated 220 KB
-        - Time 58 ms
+
+                    KB Allocated   Milliseconds
+    Resource         43             7
+    Additive scene  220            38
+    Single scene    180            57
 
 ## Features
 

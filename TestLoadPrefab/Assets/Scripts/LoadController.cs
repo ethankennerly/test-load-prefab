@@ -5,6 +5,11 @@ namespace Finegamedesign.TestLoadPrefab
 {
     public sealed class LoadController : MonoBehaviour
     {
+        public void ClearCache()
+        {
+            Caching.ClearCache();
+        }
+
         public void LoadScene(string sceneName)
         {
             SceneManager.LoadScene(sceneName);

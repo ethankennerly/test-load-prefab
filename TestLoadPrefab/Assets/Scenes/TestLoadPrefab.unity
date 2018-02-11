@@ -206,7 +206,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f43f59c64a3e30945aee38a2617226f1, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1560674132
+--- !u!1001 &1920085072
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -304,6 +304,16 @@ Prefab:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114963935409580246, guid: e976e9c12aa6ed44d9ffd4740f4aeff5,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 994253360}
+    - target: {fileID: 114368225523976860, guid: e976e9c12aa6ed44d9ffd4740f4aeff5,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 994253360}
+    - target: {fileID: 114486006682181558, guid: e976e9c12aa6ed44d9ffd4740f4aeff5,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
