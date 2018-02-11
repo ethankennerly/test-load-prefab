@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TestLoadPrefab.unity
+    guid: c9565ecbb008e1d4a9071c0c962d2d69
+  - enabled: 1
+    path: Assets/Scenes/TestAdditiveScene.unity
+    guid: 4aae546dc54467a4885220cecad5cd38

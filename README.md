@@ -34,6 +34,18 @@ TODO: Compare Unity loading time of prefab in:
 1. Stop recording.  Select frame of spike.
 1. Inspect time spent loading.
 1. Inspect garbage allocated.
+1. Save profile if you want to refer to it later.
+
+## Results
+
+- Intel Core i7-6500U CPU @ 2.5GHz
+- RAM 8GB
+- Windows 10 Home
+- Unity Editor 2017.2
+
+1. Editor: Additive scene
+    - Garbage allocated 192 KB
+    - Time 29 ms
 
 ## Features
 
