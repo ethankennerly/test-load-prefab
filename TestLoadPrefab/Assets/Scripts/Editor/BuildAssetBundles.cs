@@ -7,10 +7,10 @@ namespace Finegamedesign.TestLoadPrefab
     {
         // Copied from:
         // https://docs.unity3d.com/Manual/AssetBundles-Workflow.html
-        [MenuItem("Assets/Build AssetBundles/Windows")]
+        [MenuItem("Assets/Build Streaming AssetBundles/Windows")]
         private static void BuildAllAssetBundles()
         {
-            string assetBundleDirectory = "Assets/AssetBundles";
+            string assetBundleDirectory = "Assets/StreamingAssets/AssetBundles";
             if(!Directory.Exists(assetBundleDirectory))
             {
                 Directory.CreateDirectory(assetBundleDirectory);
