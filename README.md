@@ -50,19 +50,19 @@ System specs:
 
 1. Windows at 800x600 resolution
 
-    Technique       KB Allocated   Milliseconds
-    Resource         29             2
-    Asset Bundle     30             8
-    Additive scene   14            19
-    Single scene     70            37
+        Technique       KB Allocated   Milliseconds
+        Resource         29             2
+        Asset Bundle     30             8
+        Additive scene   14            19
+        Single scene     70            37
 
 1. Within editor, is not represented of device.
 
-    Technique       KB Allocated   Milliseconds
-    Resource         43             7
-    Asset Bundle     70             7
-    Additive scene  220            38
-    Single scene    180            57
+        Technique       KB Allocated   Milliseconds
+        Resource         43             7
+        Asset Bundle     70             7
+        Additive scene  220            38
+        Single scene    180            57
 
 ## Features
 
