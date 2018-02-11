@@ -59,10 +59,10 @@ System specs:
 
 - [x] Empty Unity project in Unity 2017.2.
 - [x] Loading time of prefab in additive scene.
+- [x] Loading time of prefab in resources.
 
 ## To-do
 
-- [ ] Loading time of prefab in resources.
 - [ ] Loading time of prefab in asset bundle.
 - [ ] Loading time of prefab in scriptable object.
 - [ ] To be more accurate, custom sampler for each.
