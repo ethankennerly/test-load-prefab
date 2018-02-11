@@ -15,10 +15,14 @@ namespace Finegamedesign.TestLoadPrefab
         {
             Caching.ClearCache();
             Resources.UnloadUnusedAssets();
+
+            if (s_Bundle != null)
+            {
+                s_Bundle.Unload(true);
+                Destroy(s_Bundle);
+                s_Bundle = null;
+            }
             System.GC.Collect();
-            s_Bundle.Unload(true);
-            Destroy(s_Bundle);
-            s_Bundle = null;
         }
 
         // Does not load bundle again.

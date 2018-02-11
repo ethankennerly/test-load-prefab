@@ -48,7 +48,15 @@ System specs:
 - Windows 10 Home
 - Unity Editor 2017.2
 
-1. Within editor
+1. Windows at 800x600 resolution
+
+                    KB Allocated   Milliseconds
+    Resource         29             2
+    Asset Bundle     30             8
+    Additive scene   14            19
+    Single scene     70            37
+
+1. Within editor, is not represented of device.
 
                     KB Allocated   Milliseconds
     Resource         43             7
