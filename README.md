@@ -52,6 +52,7 @@ System specs:
 
                     KB Allocated   Milliseconds
     Resource         43             7
+    Asset Bundle     70             7
     Additive scene  220            38
     Single scene    180            57
 
@@ -60,9 +61,9 @@ System specs:
 - [x] Empty Unity project in Unity 2017.2.
 - [x] Loading time of prefab in additive scene.
 - [x] Loading time of prefab in resources.
+- [x] Loading time of prefab in asset bundle.
 
 ## To-do
 
-- [ ] Loading time of prefab in asset bundle.
 - [ ] Loading time of prefab in scriptable object.
 - [ ] To be more accurate, custom sampler for each.
