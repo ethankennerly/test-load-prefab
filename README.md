@@ -43,17 +43,21 @@ TODO: Compare Unity loading time of prefab in:
 - Windows 10 Home
 - Unity Editor 2017.2
 
-1. Editor: Additive scene
-    - Garbage allocated 192 KB
-    - Time 29 ms
+1. Within editor
+    - Additive scene
+        - Garbage allocated 192 KB
+        - Time 29 ms
+    - Single scene
+        - Garbage allocated 220 KB
+        - Time 58 ms
 
 ## Features
 
 - [x] Empty Unity project in Unity 2017.2.
+- [x] Loading time of prefab in additive scene.
 
 ## To-do
 
-- [ ] Loading time of prefab in additive scene.
 - [ ] Loading time of prefab in resources.
 - [ ] Loading time of prefab in asset bundle.
 - [ ] Loading time of prefab in scriptable object.

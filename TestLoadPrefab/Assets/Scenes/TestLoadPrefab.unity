@@ -151,25 +151,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1891745608906832, guid: 623b04453f7139f47ba7eacac434eca4, type: 2}
+      propertyPath: m_Name
+      value: LoadController
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 623b04453f7139f47ba7eacac434eca4, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &994253359 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1891745608906832, guid: 623b04453f7139f47ba7eacac434eca4,
+--- !u!114 &994253360 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114230588767633812, guid: 623b04453f7139f47ba7eacac434eca4,
     type: 2}
   m_PrefabInternal: {fileID: 994253358}
---- !u!114 &994253360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 994253359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f5db13a17bf461438564f29903378e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Script: {fileID: 11500000, guid: 23ce355e0532e814084ece5fbed18ecc, type: 3}
 --- !u!1001 &1201443373
 Prefab:
   m_ObjectHideFlags: 0
